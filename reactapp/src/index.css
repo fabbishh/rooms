@@ -1,0 +1,92 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "./styles/image-gallery.css";
+@import "./styles//date-range.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.slick-arrow {
+  background-color: black;
+}
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  margin: auto;
+}
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 10px solid rgb(25, 134, 134);
+  border-radius: 100%;
+  display: block;
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+.example-track.example-track-1 {
+  background: rgb(25, 134, 134);
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 4px;
+}
+.horizontal-slider .example-thumb {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+.sanatorium-description .ck-editor__editable_inline:not(.ck-comment__input *) {
+  height: 500px;
+  overflow-y: auto;
+}
